@@ -1,0 +1,26 @@
+- Busca por Profundidade (Depth-first Search):
+    - Explora o grafo investigando o novo vértice adjacente, em seguida,
+    o adjacente do adjacente, etc...
+    - Todo um segmento do grafo é visitado até o final, antes que um novo
+    caminho seja investigado.
+    - A partir do nó inicial empilham-se os nós adjacentes e marca o nó
+    corrente como visitado. Em seguida, pega-se o nó do topo e repete-se o
+    processo. Não havendo mais adjacentes, desempilha-se e repete o processo,
+    até que a pilha esteja vasia.
+
+- Busca em Largura (Breadth-first Search):
+    - Explora o grafo investigado todos os vértices adjacentes por primeiro,
+    de uma vez, antes que um novo caminho seja investigado.
+    - Apartir do nó inicial, para cada nó adjacente, enfilera-o e marca visitado.
+    Quando não houver mais adjacentes, desenfilera-se um vértice, usa-se o nó
+    da frente como vértice corrente e repete-se o processo até que a lista
+    se esvazie.
+
+- Algoritimo de Dijkstra (Proposto pelo holandes Edsger Dijkstra em 1956):
+    - Caminho ótimo em grafos conexos com pesos não negativos.
+    - Baseado no algoritimo de busca em largura (BFS). Algoritimo guloso.
+    - Encontra o ótimo global a partir de ótimos locais.
+    -Aplicações:
+        - Roteamento de pacotes.
+        - Trafego urbano e aéreo; GPS; Ferrovias.
+        - Automação industrial.
