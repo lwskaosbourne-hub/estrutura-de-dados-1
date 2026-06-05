@@ -7,7 +7,7 @@
 #define TAM 25
 
 typedef struct{
-    int v1;
+    int vi;
     int vj;
     int peso;
 } arc;
